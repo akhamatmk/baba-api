@@ -11,6 +11,10 @@
 |
 */
 
+$router->get('file', [
+    'as' => 'get-file', 'uses' => 'FileController@index'
+]);
+
 $router->post('send_file', [
     'as' => 'send-file', 'uses' => 'FileController@store'
 ]);

@@ -7,6 +7,16 @@ use App\SendFile;
 
 class FileController extends Controller
 {
+    public function index()
+    {
+        $data = SendFile::get();
+        return [
+                'error' => false,
+                'error_message' => null,
+                'data' => $data
+            ];
+    }
+
     public function store(Request $request)
     {
     	$validator = Validator::make($request->all(), [
