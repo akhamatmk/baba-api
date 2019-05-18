@@ -3,7 +3,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Validator;
 use DateTime;
-use App\SendFIle;
+use App\SendFile;
 
 class FileController extends Controller
 {
