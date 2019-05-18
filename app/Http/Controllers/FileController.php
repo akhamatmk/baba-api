@@ -29,7 +29,7 @@ class FileController extends Controller
        	$destinationPath ="images/";
        	$request->file('image')->move($destinationPath, $file_name);
 
-        $send_files = new SendFIle();
+        $send_files = new SendFile();
         $send_files->email = $request->email;
         $send_files->username = $request->username;
         $send_files->image = $file_name;
