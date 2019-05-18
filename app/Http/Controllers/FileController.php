@@ -53,9 +53,9 @@ class FileController extends Controller
 		    for($j = $i+1; $j < strlen($string); $j++) {  
 		        if($string[$i] == $string[$j] && $string[$i] != ' ')
 		            return true;
-		    }  
+		    }  		    
+		}
 
-		    return false;
-		}  
+		return false;
     }
 }
