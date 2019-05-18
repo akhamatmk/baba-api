@@ -11,6 +11,12 @@
 |
 */
 
+$router->post('send_file', [
+    'as' => 'send-file', 'uses' => 'FileController@store'
+]);
+
 $router->get('/', function () use ($router) {
-    return $router->app->version();
+    return [
+    	'data' => 'welcome to baba api'
+    ];
 });
